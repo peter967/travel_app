@@ -1,9 +1,9 @@
 import '../repositories/trip_repo.dart';
 
-class DeleteTrips {
+class DeleteTrip {
   final TripRepository repository;
 
-  DeleteTrips(this.repository);
+  DeleteTrip(this.repository);
   Future<void> call(int index) {
     return repository.deleteTrip(index);
   }

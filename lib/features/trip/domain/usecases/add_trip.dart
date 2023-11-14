@@ -1,10 +1,10 @@
 import '../entities/trip.dart';
 import '../repositories/trip_repo.dart';
 
-class AddTrips {
+class AddTrip {
   final TripRepository repository;
 
-  AddTrips(this.repository);
+  AddTrip(this.repository);
   Future<void> call(Trip trip) {
     return repository.addTrip(trip);
   }
